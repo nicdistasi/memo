@@ -1,6 +1,7 @@
 /* #090a0b, #f6f5f4, #f943ff, #4a35d4 */
 
 body {
+    top: 0;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -26,10 +27,66 @@ body {
     100% { -webkit-transform:scale(1); transform:scale(1); } 
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1120px) {
     #footerSlogan {
         display: none;
     }
+}
+
+@media only screen and (max-width: 570px) {
+    .footerIcon {
+        display: none;
+    }
+}
+
+/* for bigger screens */
+@media only screen and (min-width: 450px) {
+    .mobile {
+        display: none;
+    }
+
+    #logoMain {
+        height: 80px;
+        transform: translateX(15px);
+    }
+
+    .footerCTA {
+        border: 2px solid #f6f5f4;
+    }
+}
+
+/* for mobile*/
+@media only screen and (max-width: 450px) {
+    .mobile {
+        display: block;
+    }
+
+    #logoMain {
+        height: 50px;
+        transform: translateX(10px);
+    }
+
+    #headerLogo {
+        display: none;
+    }
+
+    #signUp {
+        display: none;
+    }
+
+    #mobileSingUp {
+        border: none;
+        border-right: 2px solid #f6f5f4;
+        border-bottom: 2px solid #f6f5f4;
+    }
+
+    .footerCTA {
+        border: none;
+        border-right: 2px solid #f6f5f4;
+        border-bottom: 2px solid #f6f5f4;
+    }
+
+    
 }
 
 .hoverable:hover {
@@ -53,6 +110,12 @@ header {
     background-color: #090a0b;
 }
 
+#mobileSignUp {
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+}
+
 #bg {
     position: absolute;
     top: 0%;
@@ -72,30 +135,28 @@ header {
 
 #main {
     position: absolute;
+    margin-left: 2.5vw;
+    margin-top: 5vh;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 95vw;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#logoMain {
-    width: 25%;
 }
 
 #infoText {
     position: absolute;
     font-size: 10px;
     font-weight: 100;
-    transform: translateY(5vw);
+    transform: translateY(60px);
 }
 
 #homeCatchphrase {
     position: absolute;
-    top: 7vh;
-    right: 4vw;
+    top: 2vw;
+    right: 2vw;
     margin: 0;
     text-align: right;
     padding: 0;
@@ -151,6 +212,7 @@ footer {
     background-color: #090a0b;
     padding: 10px 15px 10px 15px;
     transition: text-decoration 0.5s, color 0.5s;
+    width: fit-content;
 }
 
 .footerText:hover {
@@ -158,7 +220,6 @@ footer {
 }
 
 .footerCTA {
-    border: 2px solid #f6f5f4;
     font-weight: 400;
     text-decoration: none;
     box-shadow: 0 0 0 #f6f5f4;
