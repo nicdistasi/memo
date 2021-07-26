@@ -86,7 +86,7 @@ body {
         border-bottom: 2px solid #f6f5f4;
     }
 
-    
+
 }
 
 .hoverable:hover {
@@ -197,6 +197,7 @@ footer {
     width: 100%;
     padding-right: 8%;
     right: 0;
+    margin: 0;
 }
 
 .footerItem {
