@@ -54,6 +54,10 @@ body {
         padding: 0%;
         padding-right: 8%;
     }
+
+    #cursorCont {
+        display: flex;
+    }
 }
 
 /* for mobile*/
@@ -242,7 +246,6 @@ footer {
     width: 1px;
     height: 1px;
     opacity: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0%;
