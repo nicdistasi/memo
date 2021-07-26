@@ -185,6 +185,12 @@ header {
     padding: 10px 15px 10px 15px;
     border: 2px solid #f6f5f4;
     text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#mobileEnterButton:hover {
+    background-color: #f6f5f4;
+    color: #090a0b;
 }
 
 #homeCatchphrase {
