@@ -49,10 +49,6 @@ body {
         height: 80px;
         transform: translateX(15px);
     }
-
-    .footerCTA {
-        border: 2px solid #f6f5f4;
-    }
 }
 
 /* for mobile*/
@@ -79,17 +75,14 @@ body {
         border-right: 2px solid #f6f5f4;
         border-bottom: 2px solid #f6f5f4;
     }
-
-    .footerCTA {
-        border: none;
-        border-right: 2px solid #f6f5f4;
-        border-bottom: 2px solid #f6f5f4;
-    }
     
     #cursorCont {
         display: none;
     }
-}
+    
+    #bgRing {
+        display: none;
+    }
 
 .hoverable:hover {
     cursor:none;
@@ -226,6 +219,7 @@ footer {
     font-weight: 400;
     text-decoration: none;
     box-shadow: 0 0 0 #f6f5f4;
+    border: 2px solid #f6f5f4;
     transition: border 0.5s, color 0.5s, background-color 0.5s, box-shadow 0.5s;
 }
 
