@@ -85,8 +85,10 @@ body {
         border-right: 2px solid #f6f5f4;
         border-bottom: 2px solid #f6f5f4;
     }
-
-
+    
+    #cursorCont {
+        display: none;
+    }
 }
 
 .hoverable:hover {
