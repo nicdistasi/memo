@@ -173,7 +173,7 @@ header {
     position: absolute;
     font-size: 10px;
     font-weight: 100;
-    transform: translateY(60px);
+    transform: translateY(80px);
 }
 
 #mobileEnterButton {
