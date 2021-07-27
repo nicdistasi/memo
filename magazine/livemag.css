@@ -86,8 +86,7 @@ html {
 #mainPages {
     position: absolute;
     width: 100vw;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100%;
     display: grid;
     overflow-x: scroll;
     grid-auto-flow: column;
@@ -98,8 +97,7 @@ html {
 .page {
     scroll-snap-align: start;
     width: 100%;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100%;
     overflow: hidden;
     float: left;
 }
@@ -173,8 +171,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100%;
     background-color: #090a0b;
     color: #f6f5f4;
     box-shadow: 0 0 0px 0 #090a0b;
