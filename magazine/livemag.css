@@ -63,12 +63,17 @@
 
 body {
     width: 100vw;
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: 100vh;
     min-height: -webkit-fill-available;
     margin: 0;
     padding: 0;
     background-color: #090a0b;
     font-family: soleil, sans-serif;
+    overflow-y: hidden;
+}
+
+html {
+    min-height: -webkit-fill-available;
     overflow-y: hidden;
 }
 
@@ -81,8 +86,7 @@ body {
 #mainPages {
     position: absolute;
     width: 100vw;
-    height: calc(var(--vh, 1vh) * 100);
-    min-height: -webkit-fill-available;
+    height: 100%;
     display: grid;
     overflow-x: scroll;
     grid-auto-flow: column;
