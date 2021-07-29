@@ -250,6 +250,7 @@ footer {
     color: #f6f5f4;
     background-color: #090a0b;
     padding: 10px 15px 10px 15px;
+    text-decoration: none;
     transition: text-decoration 0.5s, color 0.5s;
     width: fit-content;
 }
